@@ -1,0 +1,1 @@
+Assets of Google's Material Design Lite. Not intended to be used directly.
