@@ -4,8 +4,8 @@
 var pathToPackageRoot = '../';
 var mdlPath = 'dist';
 var packageFilePath = 'package.js';
-var bookmarkName = 'STYLESHEETASSETS';
-var variableName = 'stylesheetAssets';
+var bookmarkName = 'DISTASSETS';
+var variableName = 'distAssets';
 var fileTypes = ['.js', '.css'];
 
 // Load modules
