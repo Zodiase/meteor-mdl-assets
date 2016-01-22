@@ -25,9 +25,6 @@ Package.onUse(function(api) {
   // Add sass files to be imported by users.
   api.addFiles(prepandPathToFiles(sassFiles, mdlSrcPath), 'client', {isImport: true});
 
-  // Add helper scss file for fixing asset loading path.
-  api.addFiles('theme.scss', 'client', {isImport: true});
-
   // Add other mdl assets.
   api.addAssets(prepandPathToFiles(miscAssets, mdlSrcPath), ['client', 'server']);
 
