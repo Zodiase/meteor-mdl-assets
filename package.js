@@ -1,4 +1,4 @@
-var mdlVersion = '1.0.6';
+var mdlVersion = '1.1.0';
 var revision = 0;
 var mdlDistPath = 'dist'; // This relies on the symlink.
 var mdlSrcPath = 'src'; // This relies on the symlink.
@@ -52,7 +52,7 @@ distAssets = ["material-grid.css","material-grid.min.css","material.amber-blue.m
 ///<<<<DISTASSETS
 var sassFiles = [];
 ///>>>>SASSFILES
-sassFiles = ["_color-definitions.scss","_functions.scss","_mixins.scss","_variables.scss","material-design-lite-grid.scss","material-design-lite.scss","styleguide.scss","template.scss","animation/_animation.scss","badge/_badge.scss","button/_button.scss","card/_card.scss","checkbox/_checkbox.scss","data-table/_data-table.scss","footer/_mega_footer.scss","footer/_mini_footer.scss","grid/_grid.scss","icon-toggle/_icon-toggle.scss","layout/_layout.scss","menu/_menu.scss","palette/_palette.scss","progress/_progress.scss","radio/_radio.scss","resets/_h5bp.scss","resets/_mobile.scss","resets/_resets.scss","ripple/_ripple.scss","shadow/_shadow.scss","slider/_slider.scss","spinner/_spinner.scss","switch/_switch.scss","tabs/_tabs.scss","textfield/_textfield.scss","tooltip/_tooltip.scss","typography/_typography.scss"];
+sassFiles = ["_color-definitions.scss","_functions.scss","_mixins.scss","_variables.scss","material-design-lite-grid.scss","material-design-lite.scss","styleguide.scss","template.scss","animation/_animation.scss","badge/_badge.scss","button/_button.scss","card/_card.scss","checkbox/_checkbox.scss","data-table/_data-table.scss","dialog/_dialog.scss","footer/_mega_footer.scss","footer/_mini_footer.scss","grid/_grid.scss","icon-toggle/_icon-toggle.scss","layout/_layout.scss","list/_list.scss","menu/_menu.scss","palette/_palette.scss","progress/_progress.scss","radio/_radio.scss","resets/_h5bp.scss","resets/_mobile.scss","resets/_resets.scss","ripple/_ripple.scss","shadow/_shadow.scss","slider/_slider.scss","snackbar/_snackbar.scss","spinner/_spinner.scss","switch/_switch.scss","tabs/_tabs.scss","textfield/_textfield.scss","tooltip/_tooltip.scss","typography/_typography.scss"];
 ///<<<<SASSFILES
 var miscAssets = [];
 ///>>>>MISCASSETS
