@@ -20,4 +20,7 @@ function update(scanPath, fileTypes, recursive, packageFilePath, bookmarkName, v
 update.recursive = getFiles.recursive;
 update.nonrecursive = getFiles.nonrecursive;
 
-module.exports = update;
+if (require.main !== module) {
+  // Loaded by another script.
+  module.exports = update;
+}

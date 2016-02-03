@@ -27,4 +27,7 @@ function getFiles(destPath, extNames, recursive) {
 getFiles.recursive = true;
 getFiles.nonrecursive = false;
 
-module.exports = getFiles;
+if (require.main !== module) {
+  // Loaded by another script.
+  module.exports = getFiles;
+}
