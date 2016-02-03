@@ -13,4 +13,15 @@ var update = require('./imports/update.js');
 
 var scanPath = path.resolve(__dirname, pathToPackageRoot, mdlPath);
 var packageFileFullPath = path.resolve(__dirname, pathToPackageRoot, packageFilePath);
-update(scanPath, fileTypes, update.nonrecursive, packageFileFullPath, bookmarkName, variableName);
+
+function main() {
+  update(scanPath, fileTypes, update.nonrecursive, packageFileFullPath, bookmarkName, variableName);
+}
+
+if (require.main === module) {
+  // Direct execution.
+  main();
+} else {
+  // Loaded by another script.
+  module.exports = main;
+}
