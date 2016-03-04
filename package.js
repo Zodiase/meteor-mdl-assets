@@ -1,4 +1,4 @@
-var mdlVersion = '1.1.0';
+var mdlVersion = '1.1.2';
 var revision = 0;
 var mdlDistPath = 'dist'; // This relies on the symlink.
 var mdlSrcPath = 'src'; // This relies on the symlink.
