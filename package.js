@@ -20,9 +20,11 @@ Package.onUse(function(api) {
   api.use('ecmascript');
   api.use('fourseven:scss@3.4.1');
 
-  api.addAssets(prepandPathToFiles(distAssets, mdlDistPath), ['client', 'server']);
+  // Do not add to `client` platform since they are not needed.
+  api.addAssets(prepandPathToFiles(distAssets, mdlDistPath), 'server');
 
   // Add sass files to be imported by users.
+  // Has to be added to `client` platform or `fourseven:scss` won't see them.
   api.addFiles(prepandPathToFiles(sassFiles, mdlSrcPath), 'client', {isImport: true});
 
   // Add other mdl assets.
