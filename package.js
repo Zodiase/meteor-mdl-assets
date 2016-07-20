@@ -1,5 +1,5 @@
 var mdlVersion = '1.1.3';
-var revision = 0;
+var revision = 1;
 var mdlDistPath = 'dist'; // This relies on the symlink.
 var mdlSrcPath = 'src'; // This relies on the symlink.
 
@@ -16,9 +16,9 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.2.1');
+  api.versionsFrom('1.3.5');
   api.use('ecmascript');
-  api.use('fourseven:scss@3.4.1');
+  api.use('fourseven:scss@3.8.0_1');
 
   // Do not add to `client` platform since they are not needed.
   api.addAssets(prepandPathToFiles(distAssets, mdlDistPath), 'server');
