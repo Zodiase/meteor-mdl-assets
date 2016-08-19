@@ -18,7 +18,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.3.5');
   api.use('ecmascript');
-  api.use('fourseven:scss@3.8.0_1');
+  api.use('fourseven:scss@3.8.1');
 
   // Do not add to `client` platform since they are not needed.
   api.addAssets(prepandPathToFiles(distAssets, mdlDistPath), 'server');
