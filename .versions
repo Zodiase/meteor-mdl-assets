@@ -18,13 +18,13 @@ diff-sequence@1.0.6
 ecmascript@0.4.8
 ecmascript-runtime@0.2.12
 ejson@1.0.12
-fourseven:scss@3.8.0_1
+fourseven:scss@3.8.1
 geojson-utils@1.0.9
 html-tools@1.0.10
 htmljs@1.0.10
 id-map@1.0.8
 jquery@1.11.9
-local-test:zodiase:mdl-assets@1.2.0
+local-test:zodiase:mdl-assets@1.2.0_1
 logging@1.0.14
 meteor@1.1.16
 minimongo@1.0.17
@@ -48,4 +48,4 @@ ui@1.0.11
 underscore@1.0.9
 webapp@1.2.11
 webapp-hashing@1.0.9
-zodiase:mdl-assets@1.2.0
+zodiase:mdl-assets@1.2.0_1
