@@ -1,9 +1,9 @@
 {
   "dependencies": {
     "material-design-lite": {
-      "version": "1.2.0",
-      "resolved": "https://registry.npmjs.org/material-design-lite/-/material-design-lite-1.2.0.tgz",
-      "from": "material-design-lite@1.2.0"
+      "version": "1.2.1",
+      "resolved": "https://registry.npmjs.org/material-design-lite/-/material-design-lite-1.2.1.tgz",
+      "from": "material-design-lite@1.2.1"
     }
   }
 }
