@@ -3,6 +3,11 @@ var revision = 1;
 var mdlDistPath = 'dist'; // This relies on the symlink.
 var mdlSrcPath = 'src'; // This relies on the symlink.
 
+var deps = {
+  'Meteor': '1.3.5',
+  'SCSS': 'fourseven:scss@3.8.1'
+};
+
 Npm.depends({
   'material-design-lite': mdlVersion
 });
@@ -16,9 +21,9 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.3.5');
+  api.versionsFrom(deps.Meteor);
   api.use('ecmascript');
-  api.use('fourseven:scss@3.8.1');
+  api.use(deps.SCSS);
 
   // Do not add to `client` platform since they are not needed.
   api.addAssets(prepandPathToFiles(distAssets, mdlDistPath), 'server');
