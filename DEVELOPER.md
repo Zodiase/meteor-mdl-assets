@@ -1,6 +1,6 @@
 # To Update MDL version:
 1. Modify `package.js`:
-	1. Modify `mdlVersion` to the new MDL version.
+	1. Modify `mdcVersion` to the new MDC version.
 	2. Reset `revision` to zero.
 2. Run `meteor test-packages ./` in the package root directory to update dependencies in `package.js`.
 3. Verify in the correct files are in `dist/`.
