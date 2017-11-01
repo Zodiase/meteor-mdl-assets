@@ -1,11 +1,45 @@
-var mdlVersion = '1.3.0';
-var revision = 0;
-var mdlDistPath = 'dist'; // This relies on the symlink.
-var mdlSrcPath = 'src'; // This relies on the symlink.
+/**
+ * This is a Meteor package.
+ * `require` is not available in this file.
+ */
 
+var packageName = 'zodiase:mdl-assets';
+/**
+ * This defines which MDL version to use.
+ * @type {String}
+ */
+var mdlVersion = '1.3.0';
+/**
+ * Since this Meteor package follows the version of MDL,
+ * we only use this revision number.
+ * @type {Number}
+ */
+var revision = 1;
+/**
+ * The actual version of this Meteor package.
+ * @type {String}
+ */
+var pacakgeVersion = (revision > 0)
+                     ? mdlVersion + '_' + revision
+                     : mdlVersion;
+/**
+ * Relative path to the directory containing MDL distribution files.
+ * ! This relies on a symlink.
+ * @type {String}
+ */
+var mdlDistPath = 'dist';
+/**
+ * Relative path to the directory containing MDL source files.
+ * ! This relies on a symlink.
+ * @type {String}
+ */
+var mdlSrcPath = 'src';
+/**
+ * Gather all dependencies in one place.
+ */
 var deps = {
-  'Meteor': '1.3.5',
-  'SCSS': 'fourseven:scss@3.8.1'
+  'ECMA': 'ecmascript@0.9.0',
+  'SCSS': 'fourseven:scss@4.5.4'
 };
 
 Npm.depends({
@@ -13,17 +47,18 @@ Npm.depends({
 });
 
 Package.describe({
-  name: 'zodiase:mdl-assets',
-  version: (revision > 0) ? mdlVersion + '_' + revision : mdlVersion,
+  name: packageName,
+  version: pacakgeVersion,
   summary: 'Assets of Google\'s Material Design Lite. Not intended to be used directly.',
   git: 'https://github.com/Zodiase/meteor-mdl-assets.git',
   documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom(deps.Meteor);
-  api.use('ecmascript');
-  api.use(deps.SCSS);
+  api.use([
+    deps.ECMA,
+    deps.SCSS
+  ]);
 
   // Do not add to `client` platform since they are not needed.
   api.addAssets(prepandPathToFiles(distAssets, mdlDistPath), 'server');
@@ -41,8 +76,7 @@ Package.onUse(function(api) {
 
 Package.onTest(function (api) {
   api.use('tinytest');
-  api.use('jquery');
-  api.use('zodiase:mdl-assets');
+  api.use(packageName);
 });
 
 function prepandPathToFiles(files, path) {

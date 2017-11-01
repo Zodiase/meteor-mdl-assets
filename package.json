@@ -1,0 +1,21 @@
+{
+  "name": "meteor-mdl-assets",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Assets of Google's Material Design Lite. Not intended to be used directly.",
+  "main": "package.js",
+  "scripts": {
+    "test": "npm install && meteor test-packages ./ --release 1.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Zodiase@github.com/Zodiase/meteor-mdl-assets.git"
+  },
+  "author": "Xingchen Hong",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Zodiase/meteor-mdl-assets/issues"
+  },
+  "homepage": "https://github.com/Zodiase/meteor-mdl-assets#readme",
+  "dependencies": {}
+}
